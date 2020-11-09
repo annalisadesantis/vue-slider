@@ -31,7 +31,7 @@
                     <div class="painting">
                         <img :src="immagini[indice_immagine]">
                         <div class="bullets">
-                            <i v-for="(immagine, indice) in immagini"
+                            <i @click="pallini(indice)" v-for="(immagine, indice) in immagini"
                             v-bind:class="indice == indice_immagine ? 'active' : null" class="fas fa-circle"></i>
                         </div>
                     </div>
